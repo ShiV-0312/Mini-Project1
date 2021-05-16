@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake News Detection</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="text-center">Fake News Classification</h1>
+    </div>
+    <div class="container">
+      <form method="POST">
+        <div class="row">
+
+            <textarea class="col-12" name="text"></textarea>
+
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 flex-display"> 
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+          
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
